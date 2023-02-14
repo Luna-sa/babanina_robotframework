@@ -13,12 +13,7 @@ ${DASHBOARD LOGO SCOUTS PANEL}  xpath=//div[@title='Logo Scouts Panel']
 
 *** Test Cases ***
 Login to the system
-    Open login page
-    Type in email
-    Type in password
-    Click on the Submit button
-    Assert dashboard
-    [Teardown]    Close Browser
+    Login To The System
 
 *** Keywords ***
 Open login page
@@ -32,4 +27,10 @@ Click on the Submit button
 Assert dashboard
     Wait Until Element Is Visible    ${DASHBOARD LOGO SCOUTS PANEL}
     Capture Page Screenshot    alert.png
+Login to the system
+    Open login page
+    Type in email
+    Type in password
+    Click on the Submit button
+    Assert dashboard
 
